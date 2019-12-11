@@ -1,0 +1,80 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul li{
+    display: inline;
+}
+.wrapper{
+    width: 100vw;
+}
+.header .content .footer{
+    width: 100%;
+}
+.header{
+    height: 100vh;
+    background: url("images/header-background.png");
+    background-size: cover;
+    position:relative;
+}
+.header .container{
+    background: -webkit-linear-gradient( 90deg, rgba(108,76,206, .9) 0%, rgba(127,86,253, .9) 100%);
+    height: 100vh;
+    padding: 2% 10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header .header-navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.header .header-navigation, .header .header-middle, .header .header-bottom{
+    width: 100%;
+}
+.header .header-middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+.header .header-bottom{
+    display: flex;
+    justify-content: flex-end;
+}
+.header .navigation-links a{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px;
+}
+.header .header-middle .first, .header .header-middle .second{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin:5px;
+}
+.header .header-middle .third{
+    color: #e6e6e6;
+
+}
+.header .header-middle .third li{
+    font-size: 14px;
+}
+.header .header-middle .third span{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.header .header-middle .fourth{
+    background: #fff;
+    color:#7f56fd;
+    padding:18px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-top: 30px;
+}
