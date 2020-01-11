@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Nasljedni selektor*/
+ul li{
+	color: red;
+}
+
+/*Dijete (direktni potomak) selektor*/
+ul > li{
+	color: blue;
+}
+
+/*Neposredni srodni - Element koji dolazi odmah poslije prvog elementa*/
+p + ul{
+	background: rgba(0,0,0,0.3);
+}
+
+/*Opšti srodni - Element u istoj liniji ali može imati druge elemente prije njega (između njih)*/
+p ~ p{
+	font-weight: bold;
+}
+
+/*Selektor atributa*/
+/*Element koji ima atribut data-naziv*/
+p[data-naziv]{
+	color: green;
+}
+
+/*Bilo koji element koji ima atribut data-naziv*/
+[data-naziv]{
+	font-size: 1.3em;
+}
+
+/*Bilo koji element koji ima atribut data-naziv i vrijednost tog atributa "prvi-paragraf"*/
+[data-naziv="prvi-paragraf"]{
+	text-align: center;
+}
+
+/*Element koji ima atribut data-lista i negdje unutar vrijednost tog atributa sadrži riječ "lista" + njegovi direktni li potomci*/
+[data-lista*="lista"] > li{
+	font-style: italic;
+}
+
+/*Gađamo svaki a element koji sadrži href atribut, a čija vrijednost počinje sa "https://"*/
+a[href^="https://"]{
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
