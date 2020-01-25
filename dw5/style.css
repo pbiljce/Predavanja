@@ -1,0 +1,71 @@
+.prva-forma input[type="text"]{
+	display: inline-block;
+	margin-bottom: 20px;
+	padding: 5px;
+	border: none;
+	background: #444;
+	color: #fff;
+	transition: 250ms ease-in-out all;
+}
+.prva-forma input[type="text"]:hover{
+	transform: scale(1.05);
+}
+
+.prva-forma input[type="text"]:focus{
+	transform: scale(1.03);
+	border-bottom: 1px solid #444;
+	background: #fff;
+	color: #444;
+	outline: none;
+}
+.prva-forma input[type="text"]:disabled{
+	background:#b30303; 
+}
+p{
+	background: #B91AAA;
+	color: #fff;
+	padding: 5px;
+}
+p:not(.paragraf){
+	background: #13E47F;
+}
+p:empty{
+	width: 100px;
+	height: 100px;
+}
+p:first-child{
+	border: 1px solid #000;
+}
+.paragrafi p:last-child{
+	border: 1px dashed #666;
+}
+.paragrafi p:nth-child(2){
+	border: 1px dotted #aaa;
+}
+.paragrafi p:nth-child(even)::before{
+	content: "A: ";
+}
+.paragrafi p:nth-child(odd)::before{
+	content: "B: ";
+}
+.paragrafi p:first-of-type{
+	padding-left:50px;
+}
+.paragrafi p:last-of-type{
+	padding-left: 50px;
+}
+.paragrafi p:nth-of-type(3){
+	padding: 10px 0;
+}
+.paragrafi h1:only-of-type{
+	color: blue;
+}
+
+
+
+
+
+
+
+
+

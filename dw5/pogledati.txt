@@ -1,0 +1,3 @@
+atribut tabindex
+flexbox generator
+css - transform:scale, transition
