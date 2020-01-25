@@ -1,0 +1,28 @@
+p:first-child{
+	color: #EC0F13;
+}
+p:last-child{
+	color: #0F18BB;
+}
+p:nth-child(4n){
+	color: #08C034;
+}
+p:nth-child(even):hover{
+	color: #3B0955;
+}
+p:nth-child(3n+1){
+	border: 1px solid #15047F;
+}
+.box{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	border: 1px solid #000;
+	width: 20%;
+	height: 20%;
+}
+.boxChild{
+	display: flex;
+	width: 50%;
+}
