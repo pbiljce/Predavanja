@@ -1,0 +1,77 @@
+p::first-letter{
+	font-size: 20px;
+	font-weight: bold;
+	color: #b30b3b;
+}
+
+p::first-line{
+	color: #b30b3b;
+	font-weight: bold;
+}
+
+p::selection{
+	background-color: #b30b3b;
+	color: #ffffff;
+}
+#section #alpha, #section #beta{
+	background-color: #FF6;
+	padding: 10px;
+	margin: 20px 0;
+}
+#section #alpha::after{
+	content: " + new CSS text";
+	color: #666;
+	font-weight: bold;
+}
+#section #beta::before{
+	content: "Second element:  ";
+	font-weight: bold;
+	font-size: 20px;
+}
+#section-two a{
+	display: block;
+	text-decoration: none;
+	color: #b30b0b;
+	font-weight: bold;
+	margin: 5px;
+	padding: 10px;
+	font-size: 25px;
+	transition: 250ms ease-in-out all;
+}
+#section-two a:hover{
+	color: #2ea3f2;
+}
+#section-two a[href*="https://"]::after{
+	content: " [External link]";
+	font-size: 18px;
+	color: #808080;
+	text-transform: uppercase;
+}
+#section-two a[href*="https://"]:hover::after{
+	content: "["attr(href)"]";
+}
+
+:root{
+	--body-background: #eee;
+	--body-border: 1px solid #000;
+	--body-padding:10px;
+}
+body{
+	background-color: var(--body-background);
+	border: var(--body-border);
+	padding: var(--body-padding);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
