@@ -1,0 +1,50 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+#wrapper{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#gallery{
+	width: 80vw;
+	display: flex;
+	justify-content: space-around;
+	fle
+}
+.image{
+	width: 24%;
+}
+
+.image img{
+	width: 100%;
+}
+.image p{
+	text-align: center;
+}
+@media screen and (min-width:600px) and (max-width:900px){
+	#gallery{
+		flex-wrap: wrap;
+	}
+	.image{
+		width: 49%;
+	}
+}
+}
+@media screen and (max-width:599px){
+	#wrapper{
+		align-items: baseline;
+	}
+	
+	#gallery{
+		flex-wrap: wrap;
+	}
+	.image{
+		width: 98%;
+	}
+}
+}
+
