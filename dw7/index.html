@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML5 Layout</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="main-header">
+			<!-- Kada krenemo skrolati menu treba biti uvijek fiksiran i prikazan na vrhu stranice.
+				 Menu na mobitelu izgleda drugačije zbog konfiguracije prostora
+				 Najefikasnija i najlakša varijanta je da se menu na mobitelu izvlači sa strane
+				 Razmisliti o mjestu dugmića koji otvara menu na mobilnim stranicama
+			-->
+			<div id="logo">
+				<a href="index.html">
+					<img src=">#" alt="#">
+					<!--
+						a) Logo može biti vektorski logo (najčešće) u .png formatu
+						b) Logo može biti rasterski logo u .jpg/.jpeg formatu
+						c) Logo može biti u vektorskoj varijanti u .svg formatu (možemo upravljati css-om i js-om direktno nad njim)
+						d) Logo može biti video (<video> element) loopovan
+						e) Logo može biti u .gif formatu
+
+						Pogledati clip-path
+					-->
+				</a>
+			</div>
+			<nav id="main-navigation">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">#</a></li>
+					<li><a href="#">#</a></li>
+				</ul>
+				<!--
+					a) Navigacija je najčešće lista elemenata
+					b) Linkovi se redaju po važnosti (najbolja varijanta)
+					c) Najčešće imamo Home, Contact i About us
+				-->
+			</nav>
+		</header>
+		<main id="main-content">
+			<!-- Dobro bi bilo podijeliti sadržaj na sekcije -->
+			<section>
+				<div class="left"></div>
+				<div class="right"></div>
+				<div class="top"></div>
+				<div class="bottom">
+					<article>
+						<header class="article-header">
+							<h2>Naslov...</h2>
+							<h3>Podnaslov</h3>
+						</header>
+						<div class="article-main">
+							<p>Neki tekst...</p>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<footer class="article-footer">
+							<a href="#">Autor ovog iznad</a>
+							<a href="#">Datum članak i vrijeme</a>
+							<a href="#">Kategorije</a>
+							<a href="#">Tagovi</a>
+							<div class="povezani-proizvodi">
+								<!-- Proizvodi vezani za onaj na kojem se trenutno nalazimo -->
+							</div>
+						</footer>
+					</article>
+					<article></article>
+				</div>
+				<!-- Podijeliti sekciju u dijelove zavisno od dizajna -->
+			</section>
+			<section></section>
+			<section></section>
+		</main>
+		<aside id="main-sidebar">
+			
+		</aside>
+		<footer id="main-footer">
+			<div id="footer-navigation">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">#</a></li>
+					<li><a href="#">#</a></li>
+				</ul>
+				<!-- Ponovljena navigacija-->
+			</div>
+			<div id="footer-bottom">
+				<section><!-- Najvažnije kontakt informacije (po mogućnosti link ka google mapi i linkovi za direktno pozivanje na telefon ili viber/whatsup i direktni link za email)--></section>
+				<section><!-- Morate imati neki vid bloga ili novosti. Ili najčitanije ili najnovije novosti --></section>
+				<section><!-- Najprodavaniji/najbolje ocijenjeni/najviše komentara proizvodi --></section>
+				<section><!-- Socijalne mreže po mogućnosti sa nekom vrstom feed-a --></section>
+			</div>
+			<div id="copyright">
+				<!-- Informacije o nazivu firme, od kad postoji, ko je napravio stranicu sa linkom i eventualno cookies policy/privacy policy (dva linka) -->
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
