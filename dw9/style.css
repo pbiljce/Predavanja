@@ -1,0 +1,67 @@
+.animation{
+	/*Prvi korak: Definisanje početnog stanja elementa*/
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*Drugi korak: Definisanje animacije*/
+	animation: move 10s infinite ease-in-out;
+	animation-direction: alternate;
+}
+.animation2{
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	animation: move2 5s infinite;
+	animation-delay: 2s;
+}
+
+/*Treći korak: Definisanje key frame-ova*/
+@keyframes move{
+	0%{
+		top: 0;
+		left: 0;
+		background-color: #F90;
+	}
+	20%{
+		top: 50%;
+		left: 60%;
+	}
+	60%{
+		top: 80%;
+		left: 30%;
+		background-color: #066;
+	}
+	100%{
+		top: 0;
+		left: 0;
+		background-color: #F90;
+	}
+}
+
+@keyframes move2{
+	0%{
+		top: 0;
+		left: 0;
+		background-color: #F44;
+	}
+	20%{
+		top: 70%;
+		left: 60%;
+	}
+	60%{
+		top: 80%;
+		left: 30%;
+		background-color: #160F6F;
+		animation-timing-function: steps(5);
+	}
+	100%{
+		top: 0;
+		left: 0;
+		background-color: #F44;
+	}
+}
