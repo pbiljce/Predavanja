@@ -1,0 +1,15 @@
+.transition{
+	background-color: #0c0;
+	font-size: 20px;
+	text-decoration: none;
+	color: #FFF;
+	/*transition: font-size 500ms linear,
+		background-color 3s ease-in-out,
+		color 5s linear;*/
+	transition: 4s steps(50,start) all -2s/*Kreće od druge sekunde zbog delay-a od 2s*/;
+}
+.transition:hover{
+	background-color: #F3F;
+	font-size: 80px;
+	/*transition: all 3s ease-in-out;*/
+}
