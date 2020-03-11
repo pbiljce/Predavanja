@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var niz = [12,2,32,43,54,54];
+        for(var i in niz){
+            document.write(niz[i] + "<br>");
+        }
+        //Broj članova niza
+        //alert(niz.length);//alert ili prompt se uvijek pojavljuje prvi, jedino se ne pojavljuje ukoliko je u IF-u
+        niz.push(54);//dodaje element nizu
+        //alert(niz.length);
+        console.log(niz[4]);
+    </script>
+</body>
+</html>
