@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        #zeleni{
+            background: green;
+        }
+        #plavi{
+            background: blue;
+        }
+        #zuti{
+            background: yellow;
+        }
+        #crveni{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="zeleni">
+        <span>1</span>
+        <span>2</span>
+    </div>
+    <div id="plavi">Drugi</div>
+    <div id="zuti">Treći</div>
+    <div id="crveni">Četvrti</div>
+    <script>
+        var greenElement = document.getElementById("zeleni");
+        console.log(greenElement.innerText);
+        greenElement.innerText = "Moja je vrijednost zelena";
+        console.log(greenElement.innerHTML);
+    </script>
+</body>
+</html>
