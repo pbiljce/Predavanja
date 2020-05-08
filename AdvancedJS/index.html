@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJ1.1</title>
+</head>
+<body>
+    <script>
+        function Osoba(ime,prezime){
+            this.ime = ime;
+            this.prezime = prezime;
+            this.pozdravi = function(){
+                console.log("Zdravo " + this.ime + " " + this.prezime);
+            }
+        }
+
+        var osoba1 = new Osoba("Ime","Prezime");
+        osoba1.pozdravi();
+    </script>
+</body>
+</html>

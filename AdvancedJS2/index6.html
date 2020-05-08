@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJ2.6</title>
+</head>
+<body>
+    <script>
+        function sum(a){
+            return function(b){
+                return a + b;
+            }
+        }
+        alert(sum(5)(13));
+
+        function sum1(a){
+            return function(b){
+                return function(c){
+                    return a + b + c;
+                }
+            }
+        }
+        alert(sum1(5)(10)(15));
+
+        function multiply(a){
+            return function(b){
+                return function(c){
+                    return function(d){
+                        return a * b * c * d;
+                    }
+                }
+            }
+        }
+        alert(multiply(2)(3)(4)(5));
+    </script>
+</body>
+</html>
